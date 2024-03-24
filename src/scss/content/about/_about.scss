@@ -1,0 +1,94 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about{
+    @include m.container;
+    margin-top: 10rem;
+
+    .about__h2{
+        margin-bottom: 3rem;
+        text-align: center
+    }
+
+    .about__content{
+        @include m.grid(3, 4rem);
+        grid-template-columns: 2fr 1fr;
+    
+        .about__p{
+            font-size: 1.6rem;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .about__title{
+            font-size: 3rem;
+
+            span{
+                display: block;
+                font-size: 5rem;
+            }
+        }
+
+        .about__image{
+            width: 40rem;
+            height: 40rem;
+            background-image: url(../../build/img/elias-tofaletti.png);
+            background-size: cover;
+            border-radius: 5rem;
+            background-color: v.$blue;
+            rotate: -2deg;
+        }
+    }
+
+    .about__education{
+        margin-top: 8rem;
+
+        .education__title{
+            margin-bottom: 4rem;
+        }
+
+        .education__cards{
+            @include m.grid(2, 2rem);
+
+            .education__card{
+                @include m.bg-border;
+                padding: 4rem 3rem 1rem 3rem;
+
+
+                .education__h4{
+                    font-weight: 600;
+                }
+
+                .education__p{
+                    font-size: 1.4rem;
+                    margin-bottom: 0;
+                }
+
+                .education__info{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    p{
+                        font-size: 1.6rem;
+                        color: v.$steel-gray;
+                    }
+
+                    .education__location{
+                        font-weight: 700;
+                    }
+                    .education__date{
+                        font-weight: 200;
+                        font-style: italic;
+                    }
+                    
+                }
+
+
+            }
+        }
+
+
+    }
+
+
+}

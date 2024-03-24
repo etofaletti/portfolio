@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.experience{
+    @include m.container;
+    margin-top: 10rem;
+    .experience__cards{
+        @include m.grid(2, 4rem)
+    }
+
+    .experience__card{
+        @include m.bg-border;
+        padding: 4rem;
+
+        .experience__title{
+            font-size: 2.6rem;
+            font-weight: 700;
+        }
+
+        .experience__description{
+            font-size: 1.8rem;
+            line-height: 1.4;
+            font-weight: 200;
+        }
+
+        .experience__subtitle{
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 0;
+        }
+
+        .experience__list{
+            font-size: 1.5rem;
+            color: v.$pure-white;
+            list-style: square;
+            margin-left: 4rem;
+            line-height: 1.5;
+        }
+    }
+
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./build/css/app.css">
+    <title>Full Stack Developer | Elias Tofaletti</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="">
+                <img class="header__logo-img" src="build/img/logo.png" alt="Logo Web Elías Tofaletti">
+            </a>
+        </div>
+
+        <nav class="header__nav">
+            <div class="header__nav__container">
+                <a href="#">Inicio</a>
+                <a href="#">Experiencia</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Sobre Mí</a>
+            </div>
+        </nav>
+
+        <div class="header__cta">
+            <a href="#">Contacto</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__text">
+            <h1 class="main__h1">Elias Tofaletti</h1>
+            <h2 class="main__h2">Fullstack Developer</h2>
+            <p class="main__p">Soy un <strong>desarrollador web</strong> al cual le gustan los nuevos desafios, con el
+                objetivo de estar en constante aprendizaje. Idear, desarrollar y despegar!</p>
+        </div>
+
+        <div class="main__buttons">
+            <a href="https://www.linkedin.com/in/eliastofaletti/" target="_blank"><span>LinkedIn</span></a>
+            <a href="https://github.com/etofaletti" target="_blank"><span>Github</span></a>
+            <a href="curriculum-vitae.pdf" target="_blank"><span>Curriculum</span></a>
+        </div>
+    </main>
+
+    <section class="experience">
+        <h2>Experiencia</h2>
+
+        <div class="experience__cards">
+            <div class="experience__card">
+                <h4 class="experience__title">Analista Funcional</h4>
+                <p class="experience__description">Municipalidad de San Miguel. (Mayo 2023 - Actualidad)</p>
+
+                <p><strong class="experience__subtitle">Responsabilidades:</strong></p>
+                <ul class="experience__list">
+                    <li class="experience__li">Análisis de requerimientos de usuario.</li>
+                    <li class="experience__li">Coordinación de un TaaS.</li>
+                    <li class="experience__li">Evaluación y propuesta de mejoras en sistemas existentes.</li>
+                    <li class="experience__li">Documentación de requisitos funcionales y no funcionales.</li>
+                    <li class="experience__li">Elaboración de reglas de negocio dentro de sistemas.</li>
+                    <li class="experience__li">Planificación de desarrollo subdividiendo en tareas pequeñas. </li>
+                    <li class="experience__li">Capacitación a usuarios y/o clientes finales.</li>
+                </ul>
+
+                <p class="experience__subtitle"><strong>Herramientas:</strong></p>
+                <p>Jira, Trello, Project, Docs, Figma, DBeaver, Postman.</p>
+            </div>
+
+            <div class="experience__card">
+                <h4 class="experience__title">Soporte Técnico</h4>
+                <p class="experience__description">Municipalidad de San Miguel. (Mayo 2022 - Mayo 2023)</p>
+
+                <p><strong class="experience__subtitle">Responsabilidades:</strong></p>
+                <ul class="experience__list">
+                    <li class="experience__li">Asistencia presencial y remota al usuario.</li>
+                    <li class="experience__li">Mantenimiento predictivo, preventivo y correctivo de PCs.</li>
+                    <li class="experience__li">Instalación y configuración de sistemas operativos.</li>
+                    <li class="experience__li">Instalación de ofimática base y softwares específicos.</li>
+                    <li class="experience__li">Instalación y mantenimiento de controles de acceso.</li>
+                    <li class="experience__li">Administración y abastecimiento de insumos de impresoras.</li>
+                    <li class="experience__li">Instalación, configuración y backups de teléfonos celulares.</li>
+                </ul>
+
+                <p><strong class="experience__subtitle">Herramientas:</strong></p>
+                <p>VMWare, MSRA, CMD, Clonezilla, GLPI, PRTG.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <h2 class="project__h2">Proyectos</h2>
+
+        <div class="project__cards">
+            <div class="project__card">
+                <h5 class="project__title">Tickets MSM</h5>
+                <picture>
+                    <source srcset="./build/img/tickets-msm.webp" type="img/webp">
+                    <source srcset="./build/img/tickets-msm.avif" type="img/avif">
+                    <img src="./build/img/tickets-msm.png" alt="Proyecto: Tickets MSM">
+                </picture>
+
+                <p class="project__description"><strong>TicketsMSM</strong> es una aplicación de gestión ITIL, diseñada
+                    para la Municipalidad de San Miguel. Sistema robusto capaz de administrar inventarios de hardware y
+                    software, realizar seguimientos de problemas y solicitudes de asistencia técnica.</p>
+            </div>
+
+            <div class="project__card">
+                <h5 class="project__title">Patti The Plumber</h5>
+                <picture>
+                    <source srcset="./build/img/pattitheplumber.webp" type="img/webp">
+                    <source srcset="./build/img/pattitheplumber.avif" type="img/avif">
+                    <img src="./build/img/pattitheplumber.png" alt="Proyecto: Patti The Plumber">
+                </picture>
+
+                <p class="project__description"><strong>Patti The Plumber</strong> es una empresa de servicios de
+                    plomería ubicada en Key West (Florida, USA). Construí una landingpage, enfocandome en el CTA "Call
+                    Now", ya que el cliente especificaba que sus servicios estan disponibles 24/7.</p>
+            </div>
+
+            <div class="project__card">
+                <h5 class="project__title">Rock & EDM Festival</h5>
+                <picture>
+                    <source srcset="./build/img/festival-rock-edm.webp" type="img/webp">
+                    <source srcset="./build/img/festival-rock-edm.avif" type="img/avif">
+                    <img src="./build/img/festival-rock-edm.png" alt="Proyecto: Festival de Rock & EDM">
+                </picture>
+
+                <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+                    maxime, voluptatum dolor provident molestiae cupiditate recusandae quidem ex similique et,
+                    voluptatem quos omnis, laboriosam nostrum maiores ipsum numquam aliquam fugiat!</p>
+            </div>
+
+            <div class="project__card">
+                <h5 class="project__title">Faboulus Fabi's Gardens</h5>
+                <picture>
+                    <source srcset="./build/img/fabisgardens.webp" type="img/webp">
+                    <source srcset="./build/img/fabisgardens.avif" type="img/avif">
+                    <img src="./build/img/fabisgardens.png" alt="Proyecto: Faboulus Fabi's Gardens">
+                </picture>
+
+                <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+                    maxime, voluptatum dolor provident molestiae cupiditate recusandae quidem ex similique et,
+                    voluptatem quos omnis, laboriosam nostrum maiores ipsum numquam aliquam fugiat!</p>
+            </div>
+
+            <div class="project__card">
+                <h5 class="project__title">Capacitaciones MSM</h5>
+                <picture>
+                    <source srcset="./build/img/capacitaciones-msm.webp" type="img/webp">
+                    <source srcset="./build/img/capacitaciones-msm.avif" type="img/avif">
+                    <img src="./build/img/capacitaciones-msm.png" alt="Proyecto: Capacitaciones MSM">
+                </picture>
+
+                <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+                    maxime, voluptatum dolor provident molestiae cupiditate recusandae quidem ex similique et,
+                    voluptatem quos omnis, laboriosam nostrum maiores ipsum numquam aliquam fugiat!</p>
+            </div>
+
+            <div class="project__card">
+                <h5 class="project__title">Cali Devs</h5>
+                <picture>
+                    <source srcset="./build/img/cali-devs.webp" type="img/webp">
+                    <source srcset="./build/img/cali-devs.avif" type="img/avif">
+                    <img src="./build/img/cali-devs.png" alt="Proyecto: Cali-Devs">
+                </picture>
+
+                <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+                    maxime, voluptatum dolor provident molestiae cupiditate recusandae quidem ex similique et,
+                    voluptatem quos omnis, laboriosam nostrum maiores ipsum numquam aliquam fugiat!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2 class="about__h2">Sobre mí</h2>
+
+        <div class="about__content">
+
+            <div class="about__description">
+                <h3 class="about__title">Mi nombre es <span>Elias Tofaletti</span></h3>
+                <p class="about__p"> 🚀 Intensamente innovador, curioso, creativo, prolijo y perfeccionista. Siempre
+                    dispuesto a aprender y conocer nuevas tecnologías, cuyos enfoques mejoraren mis habilidades y
+                    contribuyan a los objetivos del equipo.</p>
+                <p class="about__p">💼 Comprendo que el trabajo en conjunto se logra siendo claros y honestos, asumiendo
+                    que cada individuo tiene responsabilidades y situaciones que manejar. Me apasiona la tecnología, y a
+                    un más si se aplica para generar cambios en las personas.
+                </p>
+                <p class="about__p">🎓 Egrese con honores como Técnico Personal y Profesional en Informática (TPPI),
+                    destacándome siempre en resolver desafíos, crecer y fortalecer el trabajo en equipo. He ampliado mi
+                    formación de manera presencial y a distancia, adquiriendo conocimientos en diversas tecnologías y
+                    continuando mi aprendizaje de forma constante. Creo firmemente que aquel que deja de aprender, se
+                    estanca en el pasado.</p>
+            </div>
+
+            <div class="about__image">
+
+            </div>
+        </div>
+
+        <div class="about__education">
+            <h3 class="education__title">Educación</h3>
+
+            <div class="education__cards">
+                <div class="education__card">
+                    <h4 class="education__h4">Ingeniería Informática</h4>
+                    <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odio
+                        impedit molestias numquam impedit molestias numquam.</p>
+                    <div class="education__info">
+                        <p class="education__location">Universidad de Morón</p>
+                        <p class="education__date">Marzo 2022 - Actualmente</p>
+                    </div>
+                </div>
+
+                <div class="education__card">
+                    <h4 class="education__h4">Técnico Personal y Profesional en Informática</h4>
+                    <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odio
+                        impedit molestias numquam impedit molestias numquam.</p>
+                    <div class="education__info">
+                        <p class="education__location">E.E.S.T N°2 "Rep. Argentina"</p>
+                        <p class="education__date">Marzo 2015 - Diciembre 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__certification">
+                <h3 class="certification__title">Certificaciones</h3>
+
+                <div class="certification__cards">
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Maestría en CSS3: Flexbox, Grid, SASS, Bootstrap 5</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Udemy</p>
+                            <a href="https://www.udemy.com/course/maestria-en-css3/?couponCode=KEEPLEARNING"
+                                target="_blank">
+                                <p class="certification__date">Cursando Actualmente</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Master en JavaScript: JS, jQuery, Angular, NodeJS</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Udemy</p>
+                            <a href="https://www.udemy.com/course/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/"
+                                target="_blank">
+                                <p class="certification__date">Cursando Actualmente</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Diseño de Bases de Datos Relacionales</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Udemy</p>
+                            <a href="https://www.udemy.com/certificate/UC-a4f3e4ee-6409-4a5b-9dc3-348170dcf9e8/"
+                                target="_blank">
+                                <p class="certification__date">Certificado de Aprobración</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Curso Profesional de Git</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Codigofacilito</p>
+                            <a href="https://codigofacilito.com/certificates/108416" target="_blank">
+                                <p class="certification__date">Certificado de Aprobración</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Desarrollo Web con HTML5, CSS3, JS AJAX PHP y MySQL</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Udemy</p>
+                            <a href="https://www.udemy.com/certificate/UC-29d72a3d-4a93-48ba-8bc0-09d82a963056/"
+                                target="_blank">
+                                <p class="certification__date">Certificado de Aprobración</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Machine Learning: Redes Neuronales con Python</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Udemy</p>
+                            <a href="https://www.udemy.com/certificate/UC-87b127c3-5640-4dc0-bcbc-22f8158cd00a/"
+                                target="_blank">
+                                <p class="certification__date">Certificado de Aprobración</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Introducción a la Programación en Python</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Desarrollando Futuro</p>
+                            <a href="https://www.linkedin.com/in/eliastofaletti/details/certifications/1635543541639/single-media-viewer/?profileId=ACoAADa39CwBsPDgGgBNjdO1s0UAaof_I8lR6sA"
+                                target="_blank">
+                                <p class="certification__date">Certificado de Aprobración</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification__card">
+                        <h4 class="certification__h4">Arduino, Electrónica y Programación en C</h4>
+                        <div class="certification__info">
+                            <p class="certification__location">Udemy</p>
+                            <a href="https://www.udemy.com/certificate/UC-73043045-e278-4d5e-9eb1-0dd8fe34bbb4/"
+                                target="_blank">
+                                <p class="certification__date">Certificado de Aprobración</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+    </section>
+
+    <section class="contact">
+        <div class="contact__title">
+            <h2 class="contact__h2">Contáctame</h2>
+            <p class="contact__p">¡Espero que no te hayas aburrido demasiado con mi portfolio!</p>
+        </div>
+
+        <div class="contact__email">
+            <p class="contact__email__text">elias@tofaletti.net
+                <button class="contact__button" onclick="copy()">Copiar</button>
+            </p>
+        </div>
+
+        <div class="contact__buttons">
+            <a href="https://www.linkedin.com/in/eliastofaletti/" target="_blank"><span>LinkedIn</span></a>
+            <a href="https://github.com/etofaletti" target="_blank"><span>Github</span></a>
+            <a href="curriculum-vitae.pdf" target="_blank"><span>Curriculum</span></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__p">&copy; 2024</p>
+            <p class="footer__p">Built with 💙 by <a href="curriculum-vitae.pdf" target="_blank">Elías Tofaletti</a></p>
+            <p class="footer__p">Versión 1.0.0</p>
+        </div>
+    </footer>
+
+    <script src="./build/js/app.js"></script>
+</body>
+
+</html>

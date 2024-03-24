@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about__certification {
+    margin-top: 8rem;
+
+    .certification__title {
+        margin-bottom: 4rem;
+    }
+
+    .certification__cards {
+        @include m.grid(2, 2rem);
+
+        .certification__card {
+            @include m.bg-border;
+            padding: 2rem;
+
+            .certification__h4 {
+                font-weight: 600;
+            }
+
+            .certification__info {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    font-size: 1.6rem;
+                    color: v.$steel-gray;
+                    margin: 1rem 0 0 0;
+                }
+
+                .certification__location {
+                    font-weight: 700;
+                }
+
+                .certification__date {
+                    font-weight: 200;
+                    font-style: italic;
+                }
+
+            }
+
+
+        }
+    }
+}

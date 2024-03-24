@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contact {
+    @include m.container;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+
+    .contact__p {
+        margin: 5rem 0;
+        font-weight: 100;
+        line-height: 1.4;
+    }
+
+    .contact__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1.4rem;
+        margin-top: 7rem;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 1rem;
+            transition: 300ms color;
+
+            &:hover {
+                color: v.$pure-white;
+                @include m.bg-border;
+            }
+        }
+    }
+
+    .contact__email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contact__email__text{
+            @include m.bg-border;
+            padding: .8rem 1.2rem;
+        }
+
+        .contact__button {
+            background-color: v.$charcoal-black;
+            border: none;
+            color: v.$pure-white;
+            padding: 1.6rem 1.6rem;
+            border-radius: 1.4rem;
+            font-size: 1.4rem;
+            &:hover {
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+    }
+}
