@@ -1,4 +1,6 @@
-/build/
 /node_modules/
 /.vscode/
+/src/
+package.json
 package-lock.json
+gulpfile.js
