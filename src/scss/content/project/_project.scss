@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.projects{
+    @include m.container;
+    margin-top: 8rem;
+
+    .projects__cards{
+        @include m.grid(3, 2rem);
+
+        .project__card{
+            @include m.bg-card;
+            padding: 0 1.5rem;
+
+            .project-card__head{
+                h5{
+                    color: v.$pure-white;
+                    font-size: 2rem;
+                    margin: 1.5rem 0;
+                }
+            }
+
+            .project-card__content{
+                padding: 0 .2rem;
+
+                p{
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            }
+            
+        }
+    }
+}

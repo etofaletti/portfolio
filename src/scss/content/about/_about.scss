@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about{
+    @include m.container;
+    margin-top: 8rem;
+
+    h2{
+        text-align: center;
+    }
+
+    .about__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 4rem;
+
+        .about__description{
+            width: 70%;
+            h3{
+                font-size: 3rem;
+
+                span{
+                    display: block;
+                    font-size: 5rem;
+                }
+            }
+
+            p{
+                font-size: 1.6rem;
+                text-align: justify;
+            }
+        }
+
+        .about__image{
+            width: 40rem;
+            height: 40rem;
+            background-image: url(../img/elias-tofaletti.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5rem;
+            background-color: v.$blue;
+            transform: rotate(-2deg);
+            transition: all .5s;
+
+            &:hover{
+                transform: rotate(0);
+            }
+        }
+    }
+
+    
+}

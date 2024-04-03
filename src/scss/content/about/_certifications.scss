@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about__certification{
+    margin-top: 5rem;
+
+    .certifications__cards{
+        @include m.grid(2, 2rem);
+
+        .certification__card{
+            @include m.bg-card;
+            padding: 2rem;
+
+            .certification-card__head{
+                h4{
+                    font-weight: 600;
+                }
+            }
+
+            .certification__info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1rem;
+
+
+                .certification__location{
+                    font-size: 1.4rem;
+                    font-weight: 800;
+                    margin: 0;
+                }
+
+                .certification__link{
+                    display: flex;
+                    column-gap: .5rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    color: v.$steel-gray;
+                    
+                    span{
+                        font-size: 1.2rem;
+                    }
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

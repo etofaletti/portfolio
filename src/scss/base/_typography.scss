@@ -1,0 +1,32 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+h1, h2, h3, h4 {
+    font-family: v.$heading-font;
+    margin: 0;
+    font-weight: 900;
+    color: v.$pure-white;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 5rem;
+}
+h3 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2rem;
+    color: v.$pure-white;
+    line-height: 1.8;
+}
+
+.title{
+    margin-bottom: 4rem;
+}
+
+[class$="__heading"]{
+    @include m.title;
+}

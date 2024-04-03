@@ -1,0 +1,88 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main{
+    @include m.container;
+
+    .main__container{
+        height: calc(100vh - 6rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__headings{
+            h1{
+                animation-name: toLeft;
+                font-size: 7rem;
+            }
+            h2{
+                animation-name: toRight;
+            }
+
+            h1, h2{
+                animation-duration: 5s;
+                animation-timing-function: ease;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                letter-spacing: .3rem;
+            }
+        }
+    }
+
+    .main__text{
+        margin: 2rem 0;
+        width: 60%;
+        text-align: center;
+        
+        p{
+            font-size: 1.6rem;
+            font-weight: 200;
+        }
+    }
+
+    .main__buttons{
+        display: flex;
+        column-gap: 3rem;
+
+        .main__button{
+            @include m.bg-card;
+            display: flex;
+            column-gap: 1rem;
+            padding: 1rem 1.4rem;
+            font-size: 1.4rem;
+
+            span{
+                transition: all .5s;
+            }
+            &:hover span{
+                color: v.$blue;
+            }
+        }
+    }
+}
+
+@keyframes toLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-2rem);
+    }
+}
+
+@keyframes toRight {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(2rem);
+    }
+}

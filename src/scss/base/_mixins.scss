@@ -1,0 +1,67 @@
+@use 'variables' as v;
+
+/*Media-Queries*/
+@mixin tel{
+    @media (min-width: v.$tel){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: v.$desktop){
+        @content;
+    }
+}
+
+@mixin xl_desktop{
+    @media (min-width: v.$xl_desktop){
+        @content;
+    }
+}
+
+
+/*Grid*/
+@mixin grid($columns, $spacing){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $spacing;
+}
+
+/*Containers*/
+@mixin container{
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+
+@mixin container-md{
+    width: min(95%, 80rem);
+    // margin: 0 auto;
+}
+
+@mixin container-sm{
+    width: min(95%, 60rem);
+    // margin: 0 auto;
+}
+
+/*Headings*/
+@mixin title{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+
+@mixin bg-card{
+    border-radius: 1.6rem;
+    background-color: v.$smoke-gray;
+    -webkit-box-shadow: 0px 0px 24px -8px rgba(18,18,18,1);
+    -moz-box-shadow: 0px 0px 24px -8px rgba(18,18,18,1);
+    box-shadow: 0px 0px 24px -8px rgba(18,18,18,1);
+}

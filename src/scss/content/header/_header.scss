@@ -1,0 +1,90 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    @include m.container;
+    width: 100%;
+    background: rgba(30, 30, 33, 0.30);
+    backdrop-filter: blur(2.6px);
+    -webkit-backdrop-filter: blur(2.6px);
+
+    .header__container{
+        height: 6rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .header__logo .logo__image{
+        width: 120px;
+        transition: all .5s;
+
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+
+    .navbar__links{
+        display: flex;
+        column-gap: 2rem;
+
+        a{  
+            font-size: 1.6rem;
+            opacity: 0.8;
+            font-weight: 600;
+            transition: all .5s;
+
+            &:hover{
+                opacity: 1;
+                color: v.$pure-white;
+            }
+        }
+    }
+
+    .header__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    
+    .header__btn a,
+    .header__btn buttom{
+        background-color: v.$pure-white;
+        padding: .8rem 1.5rem;
+        border-radius: 1.5rem;
+        font-size: 1.6rem;
+        color: v.$charcoal-black;
+        transition: all .5s;
+
+        &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    .darkmode__btn{
+        font-size: 1.6rem;
+        padding: 1rem;
+        border: none;
+        border-radius: 1.5rem;
+        transition: all .5s;
+
+        &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+}
+
+.active{
+    position: sticky;
+    top: 0;
+    left: 0;
+    a{
+        color: v.$pure-white;
+        opacity: 1;
+    }
+    z-index: 1;
+}

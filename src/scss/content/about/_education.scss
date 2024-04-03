@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about__education{
+    margin-top: 5rem;
+
+    .education__cards{
+        @include m.grid(2, 2rem);
+
+        .education__card{
+            @include m.bg-card;
+            padding: 4rem 3rem 1rem 3rem;
+
+            .education-card__head{
+                h4{
+                    font-weight: 600;
+                }
+    
+                p{
+                    font-size: 1.4rem;
+                    color: v.$steel-gray;
+                }
+            }
+
+            .education-card__info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .education__location{
+                    font-size: 1.4rem;
+                    font-weight: 800;
+                }
+
+                .education__date{
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    color: v.$steel-gray;
+                }
+            }
+            
+        }
+    }
+}
